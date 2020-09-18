@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="linguagem.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+    <p><h1><u> Exercício da aula 03</u></h1></p>
+    <div>
+    <button id = "ex01"><u>Exercício 01</br>O dobro</u></button>
+    <button id = "ex02"><u>Exercício 02</br>A soma</u></button>
+    <button id = "ex03"><u>Exercício 03</br>O quadrado</u></button></br>
+    <button id = "ex04"><u>Exercício 04</br>A média</u></button>
+    <button id = "ex05"><u>Exercício 05</br>A soma dos 3</u></button>
+    <button id = "ex06"><u>Exercício 06</br>Área do triângulo</u></button></br>
+    <button id = "ex07"><u>Exercício 07</br>Nome e idade</u></button>
+    <button id = "ex08"><u>Exercício 08</br>Escada</u></button>
+    <button id = "ex09"><u>Exercício 09</br>3 nomes</u></button></br>
+    <button id = "ex10"><u>Exercício 10</br>Segundo grau</u></button>
+    </div>
+
+    <script>
+        
+        ex01.addEventListener("click", function(){
+            alert("o dobro do numero")
+            const num1 = prompt("digite um numero")
+            const resul = parseInt(num1 * 2)
+            alert("o dobro do numero é: " + resul)
+        })
+        const ex02 = document.getElementById("ex02")
+
+        ex02.addEventListener("click", function(){
+            alert("a soma dos numero")
+            const num1 = prompt("digite o primeiro numero")
+            const num2 = prompt("digite o segundo numero")
+            const resul = parseInt(num1) + parseInt(num2)
+            alert("o resultado da soma é: " + resul)
+      })
+        ex03.addEventListener("click", function(){
+            alert("Quadrado do numero")
+            const num1 = prompt("Digite um numero")
+            const resul = parseInt(num1 * num1)
+            alert("o quadrado do numero é: " + resul)
+        })
+        ex04.addEventListener("click", function(){
+            alert("a media de tres numeros")
+            const num1 = prompt("digite a primeira nota")
+            const num2 = prompt("digite a segunda nota")    
+            const num3 = prompt("digite a primeira nota")
+            const resul = parseFloat(num1) + parseFloat(num2) + parseFloat(num3)
+            const res = parseFloat(resul / 3)
+            alert("a media é: " + res)
+        })
+        ex05.addEventListener("click", function(){
+            alert("a soma de tres numeros")
+            const num1 = prompt("digite a primeira nota")
+            const num2 = prompt("digite a segunda nota")    
+            const num3 = prompt("digite a primeira nota")
+            const resul = parseInt(num1) + parseInt(num2) + parseInt(num3)
+            alert("a soma é: " + resul)
+        })
+        ex06.addEventListener("click", function(){
+            alert("area do triangulo")
+            const base = prompt("digite a base do triangulo")
+            const altura = prompt("digite a altura do triangulo")    
+            const resul = parseFloat(base * altura) / 2
+            alert("a area do triangulo é: " + resul)
+        })
+        ex07.addEventListener("click", function(){
+            const nome = prompt("digite seu nome")
+            const nasc = prompt("em que ano nasceu?")
+            const atual = prompt("qual ano estamos?")
+            const idade = parseInt(atual - nasc)
+
+            alert("olá " + nome + "\n voce tem " + idade + " anos")
+        })
+        ex08.addEventListener("click", function(){
+            const degrau = prompt("digite o tamanho do degrau (em cm/m)")
+            const escada = prompt("digite o tamanho da escada (em cm/m)")
+            const total = parseFloat(escada / degrau).toFixed(2)
+            alert("voce tera que fazer mais ou menos " + total + " degrais (em cm/m)")
+        })
+        ex09.addEventListener("click", function(){
+            const nome1 = prompt("digite o primeiro nome")
+            const nome2 = prompt("digite o segundo nome")
+            const nome3 = prompt("digite o terceiro nome")
+            alert(" Olá " + nome1 + "\n Olá " + nome2 + "\n Olá " + nome3)
+        })
+        ex10.addEventListener("click", function(){
+            
+            var a = prompt("digite o valor de a")
+            var b = prompt("digite o valor de b")
+            var c = prompt("digite o valor de c")
+            var bask = parseFloat(b * b - 4 * a * c)
+            
+            if (bask>=0){
+            var x1 = parseFloat(-b + (Math.sqrt(bask)))
+            var x2 = parseFloat(-b - (Math.sqrt(bask)))
+            var totala = parseFloat((x1  / 2) * a)
+            var totalb = parseFloat((x2  / 2) * a)
+            alert(" a raizes sao " + totala.toFixed(2) + " e " + totalb.toFixed(2))
+        }
+            else{
+            alert("raiz invalida")}
+        })
+    </script>    
+</body>
+</html>

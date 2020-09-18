@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    border: 10px double yellow;
+    height: 600px;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+button{
+    color: blue;
+    background-color: silver;
+   padding: 30px;
+   margin: 10px;
+   width: 240px;
+   border-radius: 15px;
+    font-size: large;
+    font-weight: bolder;
+}
+p{
+    
+}
